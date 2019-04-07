@@ -1,0 +1,62 @@
+
+#title {
+	text-align: center; 
+	padding: 20px;
+	color: white;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+.row {
+	margin-top: 15px;
+	padding: 10px; 
+}
+
+.img {
+	height: 200px;
+	width: 200px;
+}
+
+#numGuess {
+	color: black; 
+	font-family: arial;
+	font-size: 25px; 
+	font-weight: bold;
+}
+
+#computerChoice {
+	color: red; 
+	font-size: 70px;
+	font-family: arial;
+}
+
+#wins {
+	color: black; 
+	font-weight: bold;
+	font-family: arial;
+	font-size: 25px; 
+}
+
+#losses {
+	color: black; 
+	font-weight: bold;
+	font-family: arial; 
+	font-size: 25px; 
+}
+
+#score {
+	color: black; 
+	font-weight: bold;
+	font-family: arial;
+	font-size: 23px; 
+}
+
+#playersTotalScore {
+	padding: 10px;
+	padding-bottom: 75px;
+	background-color: white; 
+	margin-bottom: 75px;
+	color: red; 
+	font-family: arial;
+	font-size: 100px;
+}
