@@ -21,7 +21,7 @@ var counter = 0;
     function reset() {
 
         computerChoice = Math.floor(Math.random() * 101) + 19;
-          
+        
         $("#computerChoice").text(computerChoice);
 
         blue = Math.floor(Math.random() * 11) + 1;
