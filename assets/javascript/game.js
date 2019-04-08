@@ -34,17 +34,17 @@ var green = Math.floor(Math.random() * 11) + 1;
 
     function win() {
 
-	      alert("You win!");
         winCounter ++;
-	      $("#winCounter").text(winCounter);
+        $("#winCounter").text(winCounter);
+        alert("You win!");
         reset();
     }
 
     function lose() {
 
-	      alert("You lose!");
 	      lossCounter ++;
-	      $("#lossCounter").text(lossCounter);
+        $("#lossCounter").text(lossCounter);
+        alert("You lose!");
 	      reset();
     }
 
