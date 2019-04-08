@@ -2,20 +2,18 @@
 
 var winCounter = 0;
 var lossCounter = 0;
+var counter = 0;
+
 var computerChoice = Math.floor(Math.random() * 101) + 19;
     
-        $("#computerChoice").text(computerChoice);
-
 var blue = Math.floor(Math.random() * 11) + 1;
 var red = Math.floor(Math.random() * 11) + 1;
 var purple = Math.floor(Math.random() * 11) + 1;
 var green = Math.floor(Math.random() * 11) + 1;
 
-
+        $("#computerChoice").text(computerChoice);
         $("#winCounter").html(winCounter);
         $("#lossCounter").html(lossCounter);
-
-var counter = 0;
         $("#playersTotalScore").text(counter);
 
     function reset() {
@@ -54,6 +52,7 @@ var counter = 0;
 
         counter = counter + blue;
         $('#playersTotalScore').text(counter); 
+
         if (counter == computerChoice) {
         win();
         }
@@ -74,7 +73,7 @@ var counter = 0;
         }   
     });  
 
-    $('#purple').on ('click', function(){
+    $('#purple').on ('click', function() {
         
         counter = counter + purple;
         $('#playersTotalScore').text(counter); 
@@ -86,7 +85,7 @@ var counter = 0;
         }   
     });  
 
-    $('#green').on ('click', function(){
+    $('#green').on ('click', function() {
         
         counter = counter + green;
         $('#playersTotalScore').text(counter); 
