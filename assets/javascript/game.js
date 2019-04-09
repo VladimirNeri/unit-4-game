@@ -23,20 +23,20 @@ var green = Math.floor(Math.random() * 11) + 1;
     function reset() {
 
         computerChoice = Math.floor(Math.random() * 101) + 19;        
-        $("#computerChoice").text(computerChoice);
+        $("#computerChoice").html(computerChoice);
         blue = Math.floor(Math.random() * 11) + 1;
         red = Math.floor(Math.random() * 11) + 1;
         purple = Math.floor(Math.random() * 11) + 1;
         green = Math.floor(Math.random() * 11) + 1;
         counter = 0;
-        $("#playersTotalScore").text(counter);
+        $("#playersTotalScore").html(counter);
 
     }
     //Win Counter
     function win() {
 
         winCounter ++;
-        $("#winCounter").text(winCounter);
+        $("#winCounter").html(winCounter);
         alert("You Win!");
         reset();
 
@@ -45,7 +45,7 @@ var green = Math.floor(Math.random() * 11) + 1;
     function lose() {
 
 	      lossCounter ++;
-        $("#lossCounter").text(lossCounter);
+        $("#lossCounter").html(lossCounter);
         alert("You Lose!");
         reset();
         
@@ -54,7 +54,7 @@ var green = Math.floor(Math.random() * 11) + 1;
     $('#blue').on ('click', function() {
 
         counter = counter + blue;
-        $('#playersTotalScore').text(counter); 
+        $('#playersTotalScore').html(counter); 
         if (counter == computerChoice) {
         win();
       }
@@ -66,7 +66,7 @@ var green = Math.floor(Math.random() * 11) + 1;
     $('#red').on ('click', function() {
     
         counter = counter + red;
-        $('#playersTotalScore').text(counter); 
+        $('#playersTotalScore').html(counter); 
         if (counter == computerChoice) {
           win();
         }
@@ -78,7 +78,7 @@ var green = Math.floor(Math.random() * 11) + 1;
     $('#purple').on ('click', function() {
         
         counter = counter + purple;
-        $('#playersTotalScore').text(counter); 
+        $('#playersTotalScore').html(counter); 
         if (counter == computerChoice) {
           win();
         }
@@ -90,7 +90,7 @@ var green = Math.floor(Math.random() * 11) + 1;
     $('#green').on ('click', function() {
         
         counter = counter + green;
-        $('#playersTotalScore').text(counter); 
+        $('#playersTotalScore').html(counter); 
         if (counter == computerChoice) {
           win();
         }
