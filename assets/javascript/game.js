@@ -50,7 +50,7 @@ var green = Math.floor(Math.random() * 11) + 1;
         reset();
         
     }
-    //Crystals random values are added to PTS.  If value is greater than PTS - Win, if not Lose.
+    //Crystals random values are added to PTS.  If value is equal to PTS - Win, if not Lose.
     $('#blue').on ('click', function() {
 
         counter = counter + blue;
