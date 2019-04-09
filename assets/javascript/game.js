@@ -14,10 +14,10 @@ var purple = Math.floor(Math.random() * 11) + 1;
 var green = Math.floor(Math.random() * 11) + 1;
 
     //Link variable to HTML Object
-        $("#computerChoice").text(computerChoice);
+        $("#computerChoice").html(computerChoice);
         $("#winCounter").html(winCounter);
         $("#lossCounter").html(lossCounter);
-        $("#playersTotalScore").text(counter);
+        $("#playersTotalScore").html(counter);
 
     //Reset Function
     function reset() {
